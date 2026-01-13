@@ -64,7 +64,7 @@ export default function Intro() {
 
               <div className="relative w-full h-full rounded-[48px] overflow-hidden border border-gray-100 bg-white/50 backdrop-blur-sm flex items-center justify-center p-4 shadow-sm">
                 <Image
-                  src="/visucaps-hero.png"
+                  src="/intro.png"
                   alt="Clarity"
                   fill
                   className="object-cover opacity-90"
@@ -73,13 +73,13 @@ export default function Intro() {
               </div>
 
               {/* Box - Ixchamroq */}
-              <div className="absolute -bottom-8 -left-2 md:-left-8 z-20 w-[180px] md:w-[280px]">
+              <div className="absolute -bottom-8 -left-2 md:-left-8 z-20 w-[180px] md:w-[280px] bg-white">
                 <div className="relative aspect-[1/1.1] rounded-[28px] border-[6px] border-white overflow-hidden shadow-2xl">
                   <Image
-                    src="/visucaps-box.png"
+                    src="/intro2.png"
                     alt="Product"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
               </div>

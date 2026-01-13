@@ -9,6 +9,7 @@ import Purchase from "@/components/Purchase";
 import Gymnastics from "@/components/Gymnastics";
 import Articles from "@/components/Articles";
 import SourceInfo from "@/components/SourceInfo";
+import Warning from "@/components/Warning";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
       <Gymnastics />
       <Articles />
       <SourceInfo/>
-   
+   <Warning/>
       <Footer />
     </main>
   );

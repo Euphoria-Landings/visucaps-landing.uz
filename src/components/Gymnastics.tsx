@@ -6,19 +6,19 @@ export default function Gymnastics() {
     {
       title: "RELAX",
       subtitle: "KO'Z CHARCHOG'I",
-      imgSrc: "/eye-relax.png",
+      imgSrc: "/relax.png",
       color: "from-purple-50 to-purple-100",
     },
     {
       title: "FOCUS",
       subtitle: "DIQQATNI JAMLASH",
-      imgSrc: "/eye-focus.png",
+      imgSrc: "/focus.png",
       color: "from-gray-50 to-gray-100",
     },
     {
       title: "VISION",
       subtitle: "TINIKLIKNI TIKLASH",
-      imgSrc: "/eye-vision.png",
+      imgSrc: "/vision.png",
       color: "from-purple-100 to-purple-200",
     },
   ];

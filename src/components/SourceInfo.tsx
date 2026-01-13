@@ -16,18 +16,6 @@ export default function SourceInfo() {
 
   return (
     <section className="w-full bg-white pt-8 pb-4 border-t border-gray-50">
-      {/* 1. QONUNIY OGOHLANTIRISH - Binafsha uslubda */}
-      <div className="w-full border-y-[1px] border-gray-100 py-5 mb-10 bg-gray-50/20">
-        <div className="max-w-[1100px] mx-auto px-4 text-center">
-          <p className="text-[#4B2C82] font-[1000] text-[11px] md:text-[14px] tracking-[2px] uppercase italic opacity-90">
-            BQM. DORI VOSITASI HISOBLANMAYDI.
-          </p>
-          <p className="text-gray-400 font-bold text-[7px] md:text-[8px] uppercase tracking-[1px] mt-1">
-            Iste'mol qilishdan avval mutaxassis bilan maslahatlashing
-          </p>
-        </div>
-      </div>
-
       <div className="max-w-[1100px] mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* BREND VA TUGMALAR - VISUCAPS Clean Style */}

@@ -103,7 +103,7 @@ export default function Usage() {
         <div className="w-full md:w-1/2 relative">
           <div className="relative aspect-[16/10] md:aspect-[4/3] rounded-[32px] overflow-hidden shadow-xl border-2 border-gray-50 bg-gray-50">
             <Image
-              src="/usage-visucaps.png"
+              src="/qabul.png"
               alt="VisuCaps Usage"
               fill
               className="object-cover"
@@ -111,15 +111,7 @@ export default function Usage() {
             />
           </div>
 
-          {/* Ixcham Badge */}
-          <div className="absolute -bottom-3 -right-3 bg-[#4B2C82] text-white px-4 py-3 rounded-[16px] shadow-lg -rotate-1">
-            <p className="text-[6px] font-black uppercase tracking-tighter opacity-70 leading-none">
-              Har kuni
-            </p>
-            <p className="text-[12px] font-[1000] italic uppercase leading-tight">
-              SOG'LOM KO'ZLAR
-            </p>
-          </div>
+        
         </div>
       </div>
     </section>

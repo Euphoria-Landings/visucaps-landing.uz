@@ -11,21 +11,21 @@ export default function Articles() {
       title: "Lutein va ko'z himoyasi",
       description:
         "Raqamli ekranlarning ko'k nuridan himoyalanish va to'r parda salomatligini saqlash usullari.",
-      imgSrc: "/eye-art1.png",
+      imgSrc: "/luten.png",
       category: "HIMOYA",
     },
     {
       title: "Tungi ko'rishni yaxshilash",
       description:
         "Gidratatsiya va to'g'ri vitaminlar majmuasi orqali qorong'uda ko'rish o'tkirligini tiklash.",
-      imgSrc: "/eye-art2.png",
+      imgSrc: "/tun.png",
       category: "TIKLASH",
     },
     {
       title: "Ko'z charchog'ini olish",
       description:
         "Kunlik ish faoliyatida ko'z mushaklarini bo'shashtirish va qon aylanishini yaxshilash sirlari.",
-      imgSrc: "/eye-art3.png",
+      imgSrc: "/charchoq.png",
       category: "SOG'LOM HAYOT",
     },
   ];

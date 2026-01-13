@@ -67,7 +67,7 @@ export default function Composition() {
               <div className="absolute inset-0 bg-[#4B2C82]/5 rounded-full blur-[50px]" />
               <div className="relative w-full h-full bg-white rounded-full shadow-lg flex items-center justify-center p-6 border border-gray-100">
                 <Image
-                  src="/visucaps-composition.png"
+                  src="/tarkib.png"
                   alt="VisuCaps Formula"
                   fill
                   className="object-contain p-4 transition-transform duration-700 hover:scale-105"
