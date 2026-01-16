@@ -34,9 +34,8 @@ export default function Intro() {
             {/* Tavsif - Kichik va aniq */}
             <div className="max-w-[420px] mb-8 border-l-2 border-[#4B2C82] pl-5 py-2">
               <p className="text-[#444] text-[11px] md:text-[13px] leading-relaxed font-bold uppercase tracking-wide opacity-90">
-                Ko'z nurini tiklash va charchoqni olish uchun
-                <span className="text-[#4B2C82]"> innovatsion </span>
-                o'simliklar majmuasi.
+                Ko‘rish organlarining normal funksional holatini saqlash uchun
+                tabiiy o‘simlik kompleksi qo‘shilgan biologik faol qo‘shimcha.
               </p>
             </div>
 

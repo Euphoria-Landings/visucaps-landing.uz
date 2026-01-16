@@ -86,7 +86,7 @@ export default function Purchase() {
           </h2>
           <div className="h-0.5 w-12 bg-[#4B2C82] rounded-full opacity-30" />
           <p className="text-gray-400 font-black tracking-[3px] uppercase text-[7px] md:text-[8px]">
-            Ko'rish qobiliyatini tabiiy tiklash va professional himoya
+       Eng yaxshi samaraga sog‘lom turmush tarzi doirasida muntazam ravishda kurs qabul qilish orqali erishiladi.
           </p>
         </div>
 

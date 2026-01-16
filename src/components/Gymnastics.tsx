@@ -4,20 +4,20 @@ import Image from "next/image";
 export default function Gymnastics() {
   const gymCards = [
     {
-      title: "RELAX",
-      subtitle: "KO'Z CHARCHOG'I",
+      title: "ko‘rish zo‘riqishini",
+      subtitle: "boshdan kechiruvchilar",
       imgSrc: "/relax.png",
       color: "from-purple-50 to-purple-100",
     },
     {
-      title: "FOCUS",
-      subtitle: "DIQQATNI JAMLASH",
+      title: "FOCyorqin yorug‘lik",
+      subtitle: "yoki quruq havoda ishlaydiganlar",
       imgSrc: "/focus.png",
       color: "from-gray-50 to-gray-100",
     },
     {
-      title: "VISION",
-      subtitle: "TINIKLIKNI TIKLASH",
+      title: "ko‘rish qobiliyatini",
+      subtitle: "saqlab qolish haqida qayg‘uradiganlar",
       imgSrc: "/vision.png",
       color: "from-purple-100 to-purple-200",
     },
@@ -32,12 +32,11 @@ export default function Gymnastics() {
             <span className="text-[#1A1A1A]">VISU</span>
             <span className="text-[#4B2C82]">CAPS</span>
             <span className="text-[#1A1A1A] not-italic font-black text-lg md:text-xl ml-1">
-              BILAN MASHQLAR
+              kimlar uchun mos keladi
             </span>
           </h2>
           <p className="text-gray-400 text-[8px] md:text-[9px] font-bold max-w-[400px] leading-tight uppercase tracking-[2px]">
-            Ko'rish qobiliyatini saqlash va ko'z mushaklarini <br />
-            bo'shashtirish uchun foydali kundalik amallar
+            Vizu Caps kattalarga tavsiya etilishi mumkin, ular:
           </p>
         </div>
 

@@ -48,7 +48,6 @@ export default function Navbar() {
                   C
                   <span className="relative inline-block text-[#4B2C82]">
                     A{/* A harfi ustida diagonal chiziq */}
-                    <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[2px] md:h-[3px] bg-[#1A1A1A] rotate-[-45deg] rounded-full"></span>
                   </span>
                   PS
                 </span>

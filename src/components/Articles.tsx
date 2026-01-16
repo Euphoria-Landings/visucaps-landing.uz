@@ -8,7 +8,7 @@ export default function Articles() {
 
   const articles = [
     {
-      title: "Lutein va ko'z himoyasi",
+      title: " ko'z himoyasi",
       description:
         "Raqamli ekranlarning ko'k nuridan himoyalanish va to'r parda salomatligini saqlash usullari.",
       imgSrc: "/luten.png",

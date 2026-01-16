@@ -20,11 +20,11 @@ export default function Home() {
       <Features />
       <Composition />
       <Usage />
-      <Purchase />   
       <Gymnastics />
+      <Purchase />
       <Articles />
-      <SourceInfo/>
-   <Warning/>
+      <SourceInfo />
+      <Warning />
       <Footer />
     </main>
   );

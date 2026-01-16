@@ -4,21 +4,23 @@ import Image from "next/image";
 export default function Composition() {
   const mainFeatures = {
     vision: [
-      "Ko'z to'r pardasi regeneratsiyasini tezlashtiradi",
-      "Mikrosirkulyatsiyani yaxshilab, bosimni pasaytiradi",
+      "normal ko‘rish qobiliyatini saqlashga yordam beradi",
+      "ko‘rish charchog‘ini kamaytirishga yordam beradi",
+      "to‘r pardaning funksional holatini ta’minlaydi.",
+      "ko‘zni oksidlovchi stressdan himoya qilishga yordam beradi.",
     ],
     protection: [
-      "Lutein — ko'zni ultrabinafsha nurlardan himoyalaydi",
-      "Zeaksantin — markaziy ko'rishni tiniqlashtiradi",
-      "Sink va Selen — katarakta rivojlanishini to'xtatadi",
+      "oddiy chernika",
+      "dorivor tirnoqgul",
+      "oddiy ayir",
     ],
   };
 
   const components = [
-    { name: "Lutein", desc: "Himoya" },
-    { name: "Zeaksantin", desc: "Tiniqlik" },
-    { name: "A Vitamini", desc: "Tiklanish" },
-    { name: "Antotsian", desc: "Quvvat" },
+    { name: "tirnoqgul", desc: "Himoydorivora" },
+    { name: "chernika", desc: "Tiniqlik" },
+    { name: "teshik dalachoy", desc: "Tiklanish" },
+    { name: "katta zubturum", desc: "Quvvat" },
   ];
 
   return (
@@ -40,10 +42,10 @@ export default function Composition() {
           <div className="w-full lg:w-[320px] bg-white rounded-[32px] p-6 md:p-8 shadow-sm border border-gray-50 hover:border-[#4B2C82]/20 transition-all duration-500">
             <div className="mb-6">
               <h3 className="text-[#4B2C82] text-xl font-black uppercase italic leading-none">
-                TIKLASH
+                Asosiy
               </h3>
               <p className="text-[9px] text-gray-300 font-bold uppercase tracking-widest mt-1">
-                Vision Focus
+                xususiyatlar
               </p>
               <div className="h-0.5 w-10 bg-[#4B2C82] mt-2 rounded-full" />
             </div>
@@ -97,10 +99,11 @@ export default function Composition() {
           <div className="w-full lg:w-[320px] bg-white rounded-[32px] p-6 md:p-8 shadow-sm border border-gray-50 hover:border-[#4B2C82]/20 transition-all duration-500">
             <div className="mb-6">
               <h3 className="text-[#4B2C82] text-xl font-black uppercase italic leading-none">
-                HIMOYA
+                Tarkibi
               </h3>
               <p className="text-[9px] text-gray-300 font-bold uppercase tracking-widest mt-1">
-                Retina Shield
+                Vizu Caps tarkibiga o‘simliklardan olingan biologik faol
+                komponentlar kiradi, jumladan:
               </p>
               <div className="h-0.5 w-10 bg-[#4B2C82] mt-2 rounded-full" />
             </div>

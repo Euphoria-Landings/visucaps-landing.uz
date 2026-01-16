@@ -19,7 +19,7 @@ export default function Usage() {
           />
         </svg>
       ),
-      title: "KUNIGA 1 MAHAL",
+      title: "KUNIGA 2 MAHAL",
       desc: "Ertalab ovqatdan so'ng 1 kapsula",
     },
     {

@@ -9,37 +9,30 @@ interface OrderModalProps {
 
 export default function OrderModal({ isOpen, onClose }: OrderModalProps) {
   const [formData, setFormData] = useState({ name: "", phone: "" });
-  const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
   const [snackbar, setSnackbar] = useState({ isVisible: false, message: "" });
 
-  const showNotice = (msg: string) => {
-    setSnackbar({ isVisible: true, message: msg });
-  };
-
-  useEffect(() => {
-    if (snackbar.isVisible) {
-      const timer = setTimeout(() => {
-        setSnackbar({ ...snackbar, isVisible: false });
-      }, 4000);
-      return () => clearTimeout(timer);
-    }
-  }, [snackbar.isVisible]);
-
+  // Modal ochilganda holatlarni tozalash
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
       setStatus("idle");
       setFormData({ name: "", phone: "" });
+      setSnackbar({ isVisible: false, message: "" });
     } else {
       document.body.style.overflow = "auto";
     }
   }, [isOpen]);
 
+  // Ism kiritish (faqat harflar)
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/[^a-zA-Zа-яА-ЯёЁ\s]/g, "");
     setFormData({ ...formData, name: value });
   };
 
+  // Telefon formatlash
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let value = e.target.value.replace(/\D/g, "");
     if (!value.startsWith("998")) value = "998" + value.slice(0, 9);
@@ -60,17 +53,11 @@ export default function OrderModal({ isOpen, onClose }: OrderModalProps) {
     const digitsOnly = formData.phone.replace(/\D/g, "");
 
     if (digitsOnly.length !== 12) {
-      showNotice("Raqamni to'liq kiriting!");
+      setSnackbar({ isVisible: true, message: "Raqamni to'liq kiriting!" });
       return;
     }
 
     setStatus("loading");
-
-    const payload = {
-      full_name: formData.name,
-      phone_number: `+${digitsOnly}`,
-      product_name: "VisuCaps", // Mahsulot nomi yangilandi
-    };
 
     try {
       const response = await fetch(
@@ -78,19 +65,34 @@ export default function OrderModal({ isOpen, onClose }: OrderModalProps) {
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
+          body: JSON.stringify({
+            full_name: formData.name,
+            phone_number: `+${digitsOnly}`,
+            product_name: "VisuCaps",
+          }),
         }
       );
 
       if (response.ok) {
         setStatus("success");
         setTimeout(() => onClose(), 3000);
+      } else if (response.status === 429) {
+        // Limit xatosi
+        setStatus("idle");
+        setSnackbar({
+          isVisible: true,
+          message:
+            "Siz allaqachon ariza qoldirgansiz. Iltimos, 1 soatdan keyin qayta urinib ko'ring.",
+        });
       } else {
         throw new Error();
       }
     } catch (error) {
       setStatus("idle");
-      showNotice("Server xatoligi!");
+      setSnackbar({
+        isVisible: true,
+        message: "Server xatoligi! Keyinroq qayta urinib ko'ring.",
+      });
     }
   };
 
@@ -182,7 +184,7 @@ export default function OrderModal({ isOpen, onClose }: OrderModalProps) {
           )}
         </div>
 
-        {/* Close */}
+        {/* Close Button */}
         <button
           onClick={onClose}
           className="absolute top-5 right-5 text-gray-300 hover:text-[#4B2C82] transition-colors"
